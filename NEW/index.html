@@ -42,6 +42,7 @@
     }
 
     body {
+
       padding: 2vh 2vw;
       background: var(--color-background);
       color: var(--color-text);
@@ -58,22 +59,27 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+
+    }
+
+    article {
+      height: 50vh;
+      min-height: 400px;
     }
 
     section {
-      height: 50vh;
+      height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
       text-align: center;
-      flex-wrap: nowrap;
-      align-content: space-between;
-      justify-content: space-between;
       flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
     }
 
+
     h1 {
-      font-size: 2.5em;
+      font-size: 200%;
     }
 
     h2 {
@@ -90,6 +96,9 @@
     a {
       text-decoration: none;
       cursor: pointer;
+    }
+
+    footer a {
       margin: auto 0.5em;
     }
 
@@ -153,6 +162,9 @@
 <body>
 
   <header>
+
+    <nav></nav>
+
     <h2>
       Cyrille Besson
     </h2>
