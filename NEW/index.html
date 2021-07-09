@@ -49,6 +49,25 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .title {
+      flex-direction: column;
+    }
+
+    .circle {
+      max-height: 200px;
+      max-width: 200px;
+      border-radius: 100%;
+      background: rgb(255, 228, 232);
     }
 
     footer {
@@ -91,13 +110,15 @@
     <article>
 
 
-      <section>
+      <section class="title">
 
-        <img src="" alt="illustration">
+        <div class="circle"><img height="100%" width="100%" src="cyrille_memoji.png" alt="illustration"></div>
 
-        <h1>UI/UX Designer & HTML/CSS Explorer</h1>
 
-        <button>Contact me</button>
+        <h1>Hey 👋 I'm Cyrille</h1>
+        <h2>UI/UX Designer & HTML/CSS Explorer</h2>
+
+        <button>Get in Touch</button>
 
       </section>
 
