@@ -26,10 +26,10 @@
 
   <style>
     :root {
-      --color-background: #fff;
-      --color-text: #111827;
-      --color-circle: #fee2e2;
-      --color-CTA: #4091f7;
+      --color-1: #fff;
+      --color-2: #111827;
+      --color-3: #fee2e2;
+      --color-4: #4091f7;
     }
 
     * {
@@ -43,15 +43,20 @@
     }
 
     body {
-
       padding: 2vh 2vw;
-      background: var(--color-background);
-      color: var(--color-text);
+      background: var(--color-1);
+      color: var(--color-2);
       font-family: Arial, Helvetica, sans-serif;
     }
 
     header {
       height: 8vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 
     main {
@@ -91,7 +96,7 @@
       max-height: 200px;
       max-width: 200px;
       border-radius: 100%;
-      background: var(--color-circle);
+      background: var(--color-3);
     }
 
     a {
@@ -99,12 +104,14 @@
       cursor: pointer;
     }
 
-    footer a {
+    footer a,
+    nav a {
       margin: auto 0.5em;
+      color: var(--color-1);
     }
 
     button {
-      background-color: var(--color-CTA);
+      background-color: var(--color-4);
       border: none;
       color: white;
       padding: 1em 2em;
@@ -116,8 +123,8 @@
     }
 
     button:hover {
-      background: var(--color-text);
-      box-shadow: 0px 0px 20px var(--color-CTA);
+      background: var(--color-2);
+      box-shadow: 0px 0px 20px var(--color-4);
     }
 
     footer {
@@ -126,7 +133,7 @@
     }
 
     svg {
-      fill: var(--color-CTA);
+      fill: var(--color-4);
       fill-opacity: 0.2;
       transition: all 0.2s;
     }
@@ -135,7 +142,14 @@
       fill-opacity: 1;
     }
 
-    @media (prefers-color-scheme: dark) {}
+    @media (prefers-color-scheme: dark) {
+
+      body {
+        background: var(--color-2);
+        color: var(--color-1);
+      }
+
+    }
   </style>
 
   <!--
@@ -166,14 +180,24 @@
 
   <header>
 
-    <nav></nav>
+    <nav>
 
-    <h2>
-      Cyrille Besson
-    </h2>
+      <h3>
+        Cyrille Besson
+      </h3>
+
+      <!-- <div>
+        <a href="">Portfolio</a>
+        <a href="">Blog</a>
+      </div> -->
+
+
+    </nav>
+
   </header>
 
   <main>
+
 
     <article>
 
@@ -199,7 +223,7 @@
 
   <footer>
 
-    <a href="">
+    <a href="https://twitter.com/cyrillebesson" target="_blank">
 
       <svg role="img" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
         <title>Twitter</title>
@@ -208,7 +232,7 @@
       </svg>
 
     </a>
-    <a href="">
+    <a href="https://www.linkedin.com/in/cyrillebesson/" target="_blank">
 
       <svg role="img" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
         <title>LinkedIn</title>
@@ -217,7 +241,7 @@
       </svg>
 
     </a>
-    <a href="">
+    <a href="https://github.com/cyrillebesson" target="_blank">
       <svg role="img" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
         <title>GitHub</title>
         <path
